@@ -1,12 +1,5 @@
 #![recursion_limit = "1024"]
-#![cfg_attr(
-  feature = "nightly",
-  feature(unboxed_closures, abi_thiscall)
-)]
-#![cfg_attr(
-  all(feature = "nightly", test),
-  feature(naked_functions, core_intrinsics, asm)
-)]
+
 
 //! A cross-platform detour library written in Rust.
 //!
